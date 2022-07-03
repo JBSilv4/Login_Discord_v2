@@ -1,0 +1,299 @@
+body {
+  background: #23272a;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: Arial;
+}
+
+.tela-login {
+  background: #2c2f33;
+  width: 990px;
+  height: 570px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 5px hls(0deg 0% 0% / 0.5);
+  border-radius: 3px;
+  display: flex;
+}
+
+.box-login {
+  width: 500px;
+  height: 530px;
+  margin: 20px;
+  text-align: center;
+}
+
+.box-login h1 {
+  font-size: 33px;
+  padding: 5px 0;
+  margin: 0;
+  color: #99aab5;
+}
+
+.box-login p {
+  margin: 0;
+  font-size: 25px;
+  padding: 0;
+  color: #606566;
+}
+
+.form-box {
+  position: relative;
+  margin: 80px 0 40px;
+  width: 100%;
+}
+
+.form-box input {
+  background: #1f2023;
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.form-box input:focus {
+  outline-color: #7289da;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+.form-box label {
+  position: absolute;
+  top: -60%;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+  color: #99aab5;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+
+.form-box a {
+  text-decoration: none;
+  color: #7289da;
+  position: relative;
+  padding: 5px 0;
+  left: -35%;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: #7289da;
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.registro p {
+  padding: 40px 0;
+  font-size: 15px;
+}
+
+.registro a {
+  text-decoration: none;
+  color: #7289da;
+}
+
+.box-qrcode {
+  width: 400px;
+  height: 530px;
+  margin: 20px;
+  text-align: center;
+  display: block;
+}
+
+.box-qrcode img {
+  border-radius: 10px;
+  margin: 50px;
+}
+
+.box-qrcode h1 {
+  color: #99aab5;
+}
+
+.box-qrcode p {
+  color: #606566;
+}
+
+.box-qrcode p strong {
+  color: #99aab5;
+}
+
+.barra {
+  height: 485px;
+  border-radius: 5px;
+  position: relative;
+  top: 6%;
+  left: 0%;
+}
+
+.inputs-login label {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px 20px;
+}
+
+.inputs-login input {
+  display: flex;
+  width: 270px;
+  height: 25px;
+  border: none;
+  background: #252628;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.perfil {
+  background: #2c2f33;
+  width: 370px;
+  height: 495px;
+  position: relative;
+  top: 50%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 5px 3px 18px #000;
+  display: none;
+}
+
+.perfil .banner {
+  width: 370px;
+  height: 200px;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom right, #4affde 0%, #5b9dff 40%, #9f6bff 60%, #ff34d2 100%);  
+  background-size: 200% 200%;
+  animation: gradientEffect 6s linear infinite alternate;
+}
+
+@keyframes gradientEffect {
+  from { background-position: 0 0; }
+  to { background-position: 100% 100%; }
+}
+
+.perfil .foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  border: solid 7px #2c2f33;
+}
+
+.perfil .sobremim {
+  background: #3f4246;
+  position: absolute;
+  width: 345px;
+  height: 170px;
+  top: 63%;
+  left: 3%;
+  transform: transform(-30%, -50%);
+  border-radius: 10px;
+}
+
+.sobremim .text-sobre {
+  margin: 0;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.sobremim .info {
+  margin: 0;
+  padding: 5px;
+  line-height: 20px;
+}
+
+.perfil .name-user {
+  position: absolute;
+  top: 53%;
+  left: 5%;
+}
+
+.perfil .name-user strong {
+  font-size: 17px;
+  color: #6b7785;
+}
+
+.emblemas {
+  position: absolute;
+  left: 70%;
+  top: 44%;
+  display: flex;
+}
+
+.emblemas #security {
+  font-size: 20px;
+  color: #2467ff;
+}
+
+.emblemas #flash {
+  font-size: 20px;
+  color: #f2d000;
+}
+
+.emblemas #bug {
+  font-size: 20px;
+  color: #28ae2a;
+}
+
+.popup {
+  padding: 5px;
+  border-radius: 10px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  z-index: 999;
+  height: 170px;
+  width: 345px;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.133);
+  text-align: center;
+  display: none;
+  
+  border: 1px solid #fff;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 6px 0 rgba(29, 29, 29, 0.203);
+}
+
+.popup h1 {
+  margin: 0;
+  position: relative;
+  top: 15%;
+  text-shadow: 5px 10px 18px #000;
+}
+
+.sobre-button {
+  margin: 0;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  top: 20%;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom right, #4affde 0%, #5b9dff 40%, #9f6bff 60%, #ff34d2 100%);  
+  background-size: 200% 200%;
+  animation: buttonEffect 6s linear infinite alternate;
+}
+
+@keyframes buttonEffect {
+  from { background-position: 0 0; }
+  to { background-position: 100% 100%; }
+}
